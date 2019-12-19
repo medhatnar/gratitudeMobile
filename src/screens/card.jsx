@@ -1,29 +1,37 @@
 import React from 'react';
-import { Text, StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, Button, View} from 'react-native';
 
 
-const Card = props => {
+export const Card = props => {
   return(
     <View style={styles.viewStyle}>
-    <Text>{prop-text-figure-this-out}</Text>
+
+    <Button
+              title={props.innerText}
+              onPress={props.pressAction}
+            />
 
     </View>
-  )
+  );
 };
 
 
 const styles = StyleSheet.create({
   viewStyle:{
     backgroundColor:  "white",
-    borderRadius: 10,
+    borderRadius: 20,
     overflow: "hidden",
     borderColor:"black",
+    borderWidth: 4,
+    // width:400,
+    // height:200,
   },
   textStyle:{
-      fontSize: 50,
+      fontSize: 20,
       color:"black",
-
-
+      textAlign:"center",
+      textAlignVertical:"center",
+      padding:10,
+      margin:0,
   }
-
 });
