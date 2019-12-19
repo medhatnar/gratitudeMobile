@@ -1,7 +1,7 @@
 import Firebase from 'firebase';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBExxAaUtJl8MLcxyPm7k2xb5gZNNj2OcA",
+    apiKey: process.env.FIREBASE_KEY,
     authDomain: "webtest-cfb70.firebaseapp.com",
     databaseURL: "https://webtest-cfb70.firebaseio.com",
     projectId: "webtest-cfb70",
