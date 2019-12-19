@@ -18,7 +18,7 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30,
-    fontFamily: 'open-sans-bold',
+    // fontFamily: 'open-sans-bold',
   }
 });
 
