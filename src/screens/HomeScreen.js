@@ -1,13 +1,24 @@
 import React from 'react';
-import { Text, StyleSheet } from 'react-native';
+import * as Font from 'expo-font';
+import { Text, StyleSheet, View } from 'react-native';
+import { Header } from './Header';
 
 const HomeScreen = () => {
-  return <Text style={styles.text}>home screen</Text>;
+  // Font.loadAsync({
+  //   'open-sans-bold': require('../assets/fonts/OpenSans-Bold.ttf'),
+  // });
+
+  return (
+    <View style={styles.text} >
+      <Header name="Ryan" />
+    </View>
+  ) 
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    // fontFamily: 'open-sans-bold',
   }
 });
 
