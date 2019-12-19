@@ -2,6 +2,7 @@ import React from 'react';
 import * as Font from 'expo-font';
 import { Text, StyleSheet, View } from 'react-native';
 import { Header } from './Header';
+import { Card } from './Card';
 
 const HomeScreen = () => {
   // Font.loadAsync({
@@ -11,8 +12,9 @@ const HomeScreen = () => {
   return (
     <View style={styles.text} >
       <Header name="Ryan" />
+      <Card innerText="here's some test text"/>
     </View>
-  ) 
+  )
 };
 
 const styles = StyleSheet.create({
