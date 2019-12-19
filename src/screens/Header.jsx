@@ -23,3 +23,9 @@ export const Header = props => {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+	text: {
+		fontSize: 30,
+	},
+});
