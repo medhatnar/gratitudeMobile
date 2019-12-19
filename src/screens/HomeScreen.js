@@ -8,21 +8,13 @@ import { BackgroundImage } from './BackgroundImage';
 const HomeScreen = () => {
 	return (
 		<BackgroundImage
-			style={styles.backgroundImage}
 			source={require('../assets/forest-floor.jpg')}
 		>
-			<View style={styles.text}>
+			<View>
 				<Header name='Ryan' />
 			</View>
 		</BackgroundImage>
 	);
 };
-
-const styles = StyleSheet.create({
-	text: {
-		fontSize: 30,
-		fontFamily: 'sans-serif-medium',
-	},
-});
 
 export default HomeScreen;
