@@ -3,7 +3,7 @@ import * as Font from 'expo-font';
 import { Text, StyleSheet, View, Image, ImageBackground } from 'react-native';
 import * as forestFloor from '../assets/forest-floor.jpg';
 import { Header } from './Header';
-import { Card } from './Card';
+import { Card } from './card';
 
 const Menu = () => {
   return (
@@ -25,7 +25,7 @@ render () {
   console.log(this.state.showTimer)
 
   return (
-    <View style={styles.text} >
+    <View>
      {
        this.state.showTimer ? <ShowTimer /> :
        <View>
@@ -39,7 +39,6 @@ render () {
     </View>
   )
 }
-
 };
 
 export default HomeScreen;
