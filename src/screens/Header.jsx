@@ -30,12 +30,12 @@ const styles = StyleSheet.create({
 		fontSize: 50,
 		color: 'white',
 		fontWeight: 'bold',
-		fontFamily: 'sans-serif-medium',
+
 	},
 	subText: {
 		fontSize: 30,
 		color: 'white',
 		fontWeight: 'bold',
-		fontFamily: 'sans-serif-medium',
+
 	},
 });
