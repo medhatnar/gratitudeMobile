@@ -1,7 +1,6 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import HomeScreen from './src/screens/HomeScreen';
 import ComponentScreen from './src/screens/ComponentScreen';
-require('dotenv').config();
 
 const navigator = createStackNavigator(
   {
@@ -9,7 +8,7 @@ const navigator = createStackNavigator(
     Components: ComponentScreen,
   },
   {
-    initialRouteName: 'Components',
+    initialRouteName: 'Home',
     defaultNavigationOptions: {
       title: 'App'
     }
