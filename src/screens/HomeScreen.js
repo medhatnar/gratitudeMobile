@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import * as Font from 'expo-font';
-import { Text, StyleSheet, View, Image, ImageBackground } from 'react-native';
-import * as forestFloor from '../assets/forest-floor.jpg';
+import { View } from 'react-native';
 import { Header } from './Header';
 import { Card } from './card';
+import { BackgroundImage } from './BackgroundImage';
 
 const Menu = () => {
   return (
@@ -25,6 +24,9 @@ render () {
   console.log(this.state.showTimer)
 
   return (
+    <BackgroundImage
+			source={require('../assets/forest-floor.jpg')}
+		>
     <View>
      {
        this.state.showTimer ? <ShowTimer /> :
@@ -37,6 +39,7 @@ render () {
         </View>
        }
     </View>
+    </BackgroundImage>
   )
 }
 };
