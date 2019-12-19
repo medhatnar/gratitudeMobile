@@ -4,6 +4,7 @@ import { Text, StyleSheet, View, Image, ImageBackground } from 'react-native';
 import * as forestFloor from '../assets/forest-floor.jpg';
 import { Header } from './Header';
 import { Card } from './card';
+import { Timer } from './Timer';
 
 const Menu = () => {
   return (
@@ -24,7 +25,11 @@ state = {
 render () {
   console.log(this.state.showTimer)
 
-  return (
+  if(this.state.showTimer){
+    return null
+  }
+
+  else return (
     <View>
      {
        this.state.showTimer ? <ShowTimer /> :
