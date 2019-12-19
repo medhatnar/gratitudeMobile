@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import * as Font from 'expo-font';
-import { Text, StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, View, Image, ImageBackground } from 'react-native';
+import * as forestFloor from '../assets/forest-floor.jpg';
 import { Header } from './Header';
 import { Card } from './Card';
 
@@ -40,12 +41,5 @@ render () {
 }
 
 };
-
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 30,
-    // fontFamily: 'open-sans-bold',
-  }
-});
 
 export default HomeScreen;
