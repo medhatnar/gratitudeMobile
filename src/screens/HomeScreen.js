@@ -4,17 +4,41 @@ import { Text, StyleSheet, View } from 'react-native';
 import { Header } from './Header';
 import { Card } from './Card';
 
-const HomeScreen = () => {
-  // Font.loadAsync({
-  //   'open-sans-bold': require('../assets/fonts/OpenSans-Bold.ttf'),
-  // });
+const Menu = () => {
+  return (
+    <View>
+      <Card innerText="Ocean waves"/>
+      <Card innerText="Rain"/>
+      <Card innerText="White noise"/>
+      <Card innerText="Nature"/>
+    </View>
+  );
+}
+
+class HomeScreen extends React.Component {
+
+state = {
+  showTimer: false
+}
+render () {
+  console.log(this.state.showTimer)
 
   return (
     <View style={styles.text} >
-      <Header name="Ryan" />
-      <Card innerText="here's some test text"/>
+     {
+       this.state.showTimer ? <ShowTimer /> :
+       <View>
+       <Header name="Ryan" />
+         <Card pressAction={() => this.setState({showTimer: !this.state.showTimer})} innerText="Ocean waves"/>
+         <Card innerText="Rain"/>
+         <Card innerText="White noise"/>
+         <Card innerText="Nature"/>
+        </View>
+       }
     </View>
   )
+}
+
 };
 
 const styles = StyleSheet.create({

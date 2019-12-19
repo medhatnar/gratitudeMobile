@@ -1,11 +1,16 @@
 import React from 'react';
-import { Text, StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, Button, View} from 'react-native';
 
 
 export const Card = props => {
   return(
     <View style={styles.viewStyle}>
-    <Text style={styles.textStyle}>{props.innerText}</Text>
+
+    <Button
+              title={props.innerText}
+              onPress={props.pressAction}
+            />
+
     </View>
   );
 };
