@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, StyleSheet } from 'react-native';
 
 const HomeScreen = () => {
-  return <Text style={styles.text}>home screen</Text>;
+  return <Text style={styles.text}>THIS IS THE home screen</Text>;
 };
 
 const styles = StyleSheet.create({
