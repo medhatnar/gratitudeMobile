@@ -17,8 +17,8 @@ The user is then brought back to the home page where they can optionally select 
 We decided to include the meditation portion because there are a handful of meditation and gratitude apps out there, but none that combine the two. We believe meditation can help bring the user to a calm state which will help when reflecting on the things that make them happy.
 
 ### Tech Stack:
-Frontend: Javascript, React Native, Styled-Components
-Backend: Python, Flask
+Frontend: Typescript, React Native, Styled-Components
+Backend: Python, Flask, SQL
 
 ### Specs:
 
